@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Contact form</title>
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+
+  <header class="masthead gutter-1-2 text-center pad-t" role="banner">
+    <div class="wrapper">
+      <h1 class="push-0">Pacific Marine Mammal Center</h1>
+    </div>
+    <nav class="navigation" id="nav" tabindex="0">
+      <div class="wrapper">
+        <ol class="list-group-inline ib">
+          <li><a class="ib gutter-1-2 pad-t-1-2 pad-b-1-2" href="index.html">Home</a></li>
+          <li><a class="ib gutter-1-2 pad-t-1-2 pad-b-1-2" href="rescues.html">Available Rescues</a></li>
+          <li><a class="ib gutter-1-2 pad-t-1-2 pad-b-1-2" href="adopt.html">Application</a></li>
+        </ol>
+      </div>
+    </nav>
+  </header>
+
+  <section class="contact pad-t-2 pad-b-2">
+    <div class="max-length">
+      <h1>Adopt an Animal</h1>
+
+      <form class="push-0" method="POST" action="https://formspree.io/petraeeghen@gmail.com">
+        <div class="push">
+          <label for="name">First Name</label>
+          <input id="name" name="name">
+        </div>
+        <div class="push">
+          <label for="email">Your email</label>
+          <input id="email" type="email" placeholder="me@me.com" name="email">
+        </div>
+        <div class="push">
+          <label for="subject">Subject</label>
+          <select id="subject" name="_subject">
+            <option>option 1</option>
+            <option>option 2</option>
+            <option>option 3</option>
+          </select>
+        </div>
+        <div class="push">
+          <label for="details">What's up?</label>
+          <textarea id="details" name="message"></textarea>
+        </div>
+        <div>
+          <button class="btn btn-light" type="submit">Send message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>

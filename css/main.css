@@ -1,0 +1,64 @@
+html {
+  font-family: Cabin, sans-serif;
+}
+
+h1 {
+  color: #fff;
+}
+
+.masthead,
+.contact,
+footer {
+  background-color: #152a36;
+}
+
+nav {
+  position: relative;
+  z-index: 2;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #202d2e;
+  border-radius: 3px;
+}
+
+.about {
+  position: relative;
+}
+
+.about-content {
+  background-color: #a3cda5;
+}
+
+.btn {
+  background-color: #f37e53;
+  border-color: #f37e53;
+}
+
+.btn:hover {
+  background-color: #5aa8c6;
+  border-color: #5aa8c6;
+}
+
+.contact {
+  color: #000;
+  list-style: none;
+}
+
+@media only screen and (min-width: 35em) {
+
+  .about-content {
+    bottom: 50px;
+    left: 50px;
+    position: absolute;
+    width: 100%;
+
+    background-color: transparent;
+  }
+
+}
