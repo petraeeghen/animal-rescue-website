@@ -3,13 +3,13 @@ html {
 }
 
 h1 {
-  color: #fff;
+  color: #235268;
 }
 
 .masthead,
 .contact,
 footer {
-  background-color: #152a36;
+  background-color: #e0f3f7;
 }
 
 nav {
@@ -36,13 +36,15 @@ nav a:hover {
 }
 
 .btn {
-  background-color: #f37e53;
-  border-color: #f37e53;
+  background-color: #235268;
+  border-color: #235268;
+  color: #fff
 }
 
 .btn:hover {
   background-color: #5aa8c6;
   border-color: #5aa8c6;
+  color: #fff
 }
 
 .contact {
