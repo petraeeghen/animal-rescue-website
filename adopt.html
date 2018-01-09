@@ -229,19 +229,23 @@
             </div>
 
             <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
-              <label class="pad-b-1-8" for="previous-sup">Have you ever missed a payment for prev. support?</label>
-              <div class="push-2 pad-t-1-2">
-                <input id="missed-yes" type="radio" name="missed">
-                <label for="missed-yes">Yes</label>
+              <fieldset>
+                <legend class="pad-b-1-8">Have you ever missed a payment for prev. support?</legend>
+                <div class="push-2 pad-t-1-2">
+                  <input id="missed-yes" type="radio" name="missed">
+                  <label for="missed-yes">Yes</label>
 
-                <input id="missed-no" type="radio" name="missed">
-                <label for="missed-no">No</label>
-              </div>
+                  <input id="missed-no" type="radio" name="missed">
+                  <label for="missed-no">No</label>
+                </div>
+              </fieldset>
             </div>
 
             <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
-              <label class="pad-b-1-8" for="previous-sup">If you have previously missed a payment and/or discontinued support please indicate why: </label>
-              <textarea id="details" name="message"></textarea>
+              <fieldset>
+                <legend class="pad-b-1-8">If you have previously missed a payment and/or discontinued support please indicate why: </legend>
+                <textarea id="details" name="message"></textarea>
+              </fieldset>
             </div>
           </div>
         </fieldset>
@@ -256,43 +260,54 @@
             </div>
 
             <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
-              <label class="pad-b-1-8" for="own-rent">What would you like to recieve from the animal you rescue?</label>
-              <div class="grid">
-                <div class="unit unit-xs-1 unit-m-1-2 gutter-1-2">
+              <fieldset>
+                <legend class="pad-b-1-8">What would you like to recieve from the animal you rescue?</legend>
+                <div class="grid">
+                  <div class="unit unit-xs-1 unit-m-1-2 gutter-1-2">
 
-                  <div class="pad-b-1-4">
-                    <input id="month" type="checkbox">
-                    <label for="month">Monthly Updates</label>
-                  </div>
+                    <div class="pad-b-1-4">
+                      <input id="month" type="checkbox">
+                      <label for="month">Monthly Updates</label>
+                    </div>
 
-                  <div class="pad-b-1-4">
-                    <input id="year" type="checkbox">
-                    <label for="year">Yearly Updates</label>
+                    <div class="pad-b-1-4">
+                      <input id="year" type="checkbox">
+                      <label for="year">Yearly Updates</label>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </fieldset>
             </div>
 
             <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
-              <label class="pad-b-1-8" for="previous-sup">Will you come visit the Marine Animal Center?</label>
-              <div class="push-2 pad-t-1-2">
-                <input id="visit-yes" type="radio" name="visit">
-                <label for="visit-yes">Yes</label>
+              <fieldset>
+                <legend class="pad-b-1-8">Will you come visit the Marine Animal Center?</legend>
+                <div class="push-2 pad-t-1-2">
+                  <input id="visit-yes" type="radio" name="visit">
+                  <label for="visit-yes">Yes</label>
 
-                <input id="visit-no" type="radio" name="visit">
-                <label for="visit">No</label>
-              </div>
+                  <input id="visit-no" type="radio" name="visit">
+                  <fieldset>
+                    <legend>No</legend>
+                  </fieldset>
+                  <fieldset>
+                    <legend>No</legend>
+                  </fieldset>
+                </div>
+              </fieldset>
             </div>
 
             <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
-              <label class="pad-b-1-8" for="own-rent">Do you agree to contact Marine Animal Center if you can no longer keepup with the monthly payments?</label>
-              <div class="push-2 pad-t-1-2">
-                <input id="contact-us-yes" type="radio" name="contact-us">
-                <label for="contact-us-yes">Yes</label>
+              <fieldset>
+                <legend class="pad-b-1-8">Do you agree to contact Marine Animal Center if you can no longer keepup with the monthly payments?</legend>
+                <div class="push-2 pad-t-1-2">
+                  <input id="contact-us-yes" type="radio" name="contact-us">
+                  <label for="contact-us-yes">Yes</label>
 
-                <input id="contact-us-no" type="radio" name="contact-us">
-                <label for="contact-us-no">No</label>
-              </div>
+                  <input id="contact-us-no" type="radio" name="contact-us">
+                  <label for="contact-us-no">No</label>
+                </div>
+              </fieldset>
             </div>
           </div>
         </fieldset>
@@ -300,7 +315,7 @@
         <fieldset>
           <legend class="normal push giga">Personal References</legend>
           <p>Please list two people to represent you as we look over your application</p>
-          <h3>First Reference (employer)</h3>
+          <h2>First Reference (employer)</h2>
 
           <div class="grid">
             <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
@@ -348,14 +363,16 @@
           <legend class="normal push giga">Final Agreement</legend>
           <div class="grid">
             <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
-              <label class="pad-b-1-8" for="own-rent">I agree that all information given and stated above is accurate and fully completed.</label>
-              <div class="pad-t-1-2">
-                <input id="agreement-yes" type="radio" name="agreement">
-                <label for="agreement-yes">Yes</label>
+              <fieldset>
+                <legend class="pad-b-1-8">I agree that all information given and stated above is accurate and fully completed.</legend>
+                <div class="pad-t-1-2">
+                  <input id="agreement-yes" type="radio" name="agreement">
+                  <label for="agreement-yes">Yes</label>
 
-                <input id="agreement-no" type="radio" name="agreement">
+                  <input id="agreement-no" type="radio" name="agreement">
                   <label for="agreement-no">No</label>
-              </div>
+                </div>
+              </fieldset>
             </div>
           </div>
         </fieldset>
