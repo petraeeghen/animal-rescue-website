@@ -2,18 +2,29 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Contact form</title>
+  <title>Pacific Marine Animal Center</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Cabin|PT+Sans:400,700" rel="stylesheet">
 </head>
+
 <body>
+
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
 
   <header class="masthead gutter-1-2 text-center pad-t" role="banner">
     <div class="wrapper">
-      <h1 class="push-0">Pacific Marine Animal Center</h1>
+      <a class="gutter block logo unit [ xs-2-3 s-1-2 m-1-3 l-1-4 ]" href="index.html">
+        <div class="img-flex">
+          <img src="images/logo.png" alt="">
+        </div>
+      </a>
     </div>
     <nav class="navigation" id="nav" tabindex="0">
       <div class="wrapper">
@@ -26,40 +37,515 @@
     </nav>
   </header>
 
-  <section class="contact pad-t-2 pad-b-2">
-    <div class="max-length">
-      <h1>Adopt an Animal</h1>
+  <main role="main" id="main" tabindex="0">
+    <form class="pad-t-2 pad-b-2 gutter-1-2" method="POST" action="https://formspree.io/bradlet@algonquincollege.com">
+      <div class="wrapper">
+        <h1 class="center-text">Rescue Application</h1>
 
-      <form class="push-0" method="POST" action="https://formspree.io/petraeeghen@gmail.com">
-        <div class="push">
-          <label for="name">First Name</label>
-          <input id="name" name="name">
+        <fieldset class="grid push-0">
+          <legend class="normal giga unit">Rescue</legend>
+          <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+            <label for="subject">Name of marine animal you are applying for: *</label>
+            <select id="subject" name="_subject">
+              <option>--- Please Select ---</option>
+              <option>Dolphin</option>
+              <option>Jellyfish</option>
+              <option>Octopus</option>
+              <option>Seahorse</option>
+              <option>Stingray</option>
+              <option>Turtle</option>
+              <option>Whale</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset class="push-0">
+          <legend class="normal push giga">Personal details</legend>
+          <div class="grid">
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label for="name">Full Name: *</label>
+              <input id="name" name="name">
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label for="tel">Phone number: *</label>
+              <input type="tel" id="tel">
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label for="alt-tel">Alternate number:</label>
+              <input type="tel" id="alt-tel">
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="time-to-call">Best time to call:</label>
+              <input id="time-to-call" name="time-to-call">
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label for="email">Email: *</label>
+              <input id="email" type="email" placeholder="me@me.com" name="email">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="normal push giga">Address</legend>
+
+          <div class="grid">
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="address">Street address</label>
+              <input class="push" id="address">
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="city">City</label>
+              <input class="push" id="city">
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="province">Province</label>
+              <select class="push" id="province">
+                <option value="">Select a province</option>
+                <option>Alberta</option>
+                <option>British Columbia</option>
+                <option>Manitoba</option>
+                <option>New Brunswick</option>
+                <option>Newfoundland & Labrador</option>
+                <option>Northwest Territories</option>
+                <option>Nova Scotia</option>
+                <option>Nunavut</option>
+                <option>Ontario</option>
+                <option>Prince Edward Island</option>
+                <option>Québec</option>
+                <option>Saskatchewan</option>
+                <option>Yukon</option>
+              </select>
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="postal-code">Postal code</label>
+              <input class="push" id="postal-code">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="normal push giga">Family & Housing</legend>
+
+          <div class="grid">
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="adult-count">Besides you, how many adults are in your household? *</label>
+              <select class="push" id="adult-count">
+                <option value="">--- Please Select ---</option>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>over 5</option>
+              </select>
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="child-count">How many children under 18? *</label>
+              <select class="push" id="child-count">
+                <option value="">--- Please Select ---</option>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>over 5</option>
+              </select>
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="child-count">Please describe your household: *</label>
+              <select class="push" id="child-count">
+                <option value="">--- Please Select ---</option>
+                <option>Active</option>
+                <option>Noisy</option>
+                <option>Quiet</option>
+                <option>Average</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="own-rent">Do you own or rent? *</label>
+              <div class="push-2 pad-t-1-2">
+                <input id="rent-yes" type="radio" name="reny">
+                <label for="rent-yes">Yes</label>
+
+                <input id="rent-no" type="radio" name="allergies">
+                <label for="rent-no">No</label>
+              </div>
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="own-rent">Does anyone in the family have a known allergy to dogs? *</label>
+              <div class="push-2 pad-t-1-2">
+                <input id="allergy-yes" type="radio" name="allergies">
+                <label for="allergy-yes">Yes</label>
+
+                <input id="allergy-no" type="radio" name="allergies">
+                <label for="allergy-no">No</label>
+              </div>
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="own-rent">Is everyone in agreement to adopt a dog? *</label>
+              <div class="push-2 pad-t-1-2">
+                <input id="agree-yes" type="radio" name="agreement">
+                <label for="agree-yes">Yes</label>
+
+                <input id="agree-no" type="radio" name="agreement">
+                <label for="agree-no">No</label>
+              </div>
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="own-rent">Do you have time to provide adequate love and attention? *</label>
+              <div class="push-2 pad-t-1-2">
+                <input id="love-yes" type="radio" name="love">
+                <label for="love-yes">Yes</label>
+
+                <input id="love-no" type="radio" name="love">
+                <label for="love-no">No</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="normal push giga">Other Pets</legend>
+
+          <div class="grid">
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="own-rent">Do you have any other pets in your household? *</label>
+              <div class="push-2 pad-t-1-2">
+                <input id="other-pets-yes" type="radio" name="other-pets">
+                <label for="other-pets-yes">Yes</label>
+
+                <input id="other-pets-no" type="radio" name="other-pets">
+                <label for="other-pets-no">No</label>
+              </div>
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="number-pets">If so, please indicate what type of pet(s) and how many: *</label>
+              <input id="number-pets">
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="own-rent">Have you ever surrendered a pet? *</label>
+              <div class="push-2 pad-t-1-2">
+                <input id="surrender-pets-yes" type="radio" name="surrender-pets">
+                <label for="surrender-pets-yes">Yes</label>
+
+                <input id="surrender-pets-no" type="radio" name="surrender-pets">
+                <label for="surrender-pets-no">No</label>
+              </div>
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="own-rent">Have you ever had a pet euthanized? *</label>
+              <div class="push-2 pad-t-1-2">
+                <input id="euthanized-pets-yes" type="radio" name="euthanized-pets">
+                <label for="euthanized-pets-yes">Yes</label>
+
+                <input id="euthanized-pets-no" type="radio" name="euthanized-pets">
+                <label for="euthanized-pets-no">No</label>
+              </div>
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="own-rent">Have you ever lost a pet to an accident? *</label>
+              <div class="push-2 pad-t-1-2">
+                <input id="accident-pets-yes" type="radio" name="accident-pets">
+                <label for="accident-pets-yes">Yes</label>
+
+                <input id="accident-pets-no" type="radio" name="accident-pets">
+                <label for="accident-pets-no">No</label>
+              </div>
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="own-rent">If you have previously had a pet, how do you discipline them, and why?</label>
+              <textarea id="details" name="message"></textarea>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="normal push giga">Veterinarian</legend>
+
+          <div class="grid">
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="own-rent">Do you have a regular veterinarian? *</label>
+              <div class="push-2 pad-t-1-2">
+                <input id="vet-yes" type="radio" name="vet">
+                <label for="vet-yes">Yes</label>
+
+                <input id="vet-no" type="radio" name="vet">
+                  <label for="vet-no">No</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="normal push giga">About the Dog You Wish To Adopt</legend>
+
+          <div class="grid">
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label for="details">What is your idea of an ideal dog and why? *</label>
+              <textarea id="details" name="message"></textarea>
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="own-rent">Where will the dog spend the <bold>day</bold>? (check all that apply) *</label>
+              <div class="grid">
+                <div class="unit unit-xs-1 unit-m-1-2 gutter-1-2">
+
+                  <div class="pad-b-1-4">
+                    <input id="crated" type="checkbox">
+                    <label for="crated">Crated</label>
+                  </div>
+
+                  <div class="pad-b-1-4">
+                    <input id="inside" type="checkbox">
+                    <label for="inside">Inside</label>
+                  </div>
+
+                  <div class="pad-b-1-4">
+                    <input id="outside" type="checkbox">
+                    <label for="outside">Outside</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="own-rent">Where will the dog spend the <bold>night</bold>? (check all that apply) *</label>
+              <div class="grid">
+                <div class="unit unit-xs-1 unit-m-1-2 gutter-1-2">
+
+                  <div class="pad-b-1-4">
+                    <input id="crated" type="checkbox">
+                    <label for="crated">Crated</label>
+                  </div>
+
+                  <div class="pad-b-1-4">
+                    <input id="inside" type="checkbox">
+                    <label for="inside">Inside</label>
+                  </div>
+
+                  <div class="pad-b-1-4">
+                    <input id="outside" type="checkbox">
+                    <label for="outside">Outside</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="dog-alone">Number of hours daily (average) the dog will spend alone: *</label>
+              <input id="dog-alone">
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="primary-care">Who will have primary responsibility for the dogs daily care? *</label>
+              <input id="primary-care">
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="financial">Who will have financial responsibility for the dog? *</label>
+              <input id="financial">
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="own-rent">Do you agree to provide regular health care by a licensed veterinarian? *</label>
+              <div class="push-2 pad-t-1-2">
+                <input id="reg-health-yes" type="radio" name="reg-health">
+                <label for="reg-health-yes">Yes</label>
+
+                <input id="reg-health-no" type="radio" name="reg-health">
+                <label for="reg-health-no">No</label>
+              </div>
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="own-rent">When the dog goes out, how do you plan to supervise it? (check all that apply) *</label>
+              <div class="grid">
+                <div class="unit unit-xs-1 unit-m-1-2 gutter-1-2">
+
+                  <div class="pad-b-1-4">
+                    <input id="fenced" type="checkbox">
+                    <label for="fenced">Fenced Yard</label>
+                  </div>
+
+                  <div class="pad-b-1-4">
+                    <input id="leash" type="checkbox">
+                    <label for="leash">On Leash</label>
+                  </div>
+
+                  <div class="pad-b-1-4">
+                    <input id="off-leash" type="checkbox">
+                    <label for="off-leash">Off Leash</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="own-rent">Do you agree to contact Loyal Rescue if you can no longer keep this dog? *</label>
+              <div class="push-2 pad-t-1-2">
+                <input id="contact-us-yes" type="radio" name="contact-us">
+                <label for="contact-us-yes">Yes</label>
+
+                <input id="contact-us-no" type="radio" name="contact-us">
+                <label for="contact-us-no">No</label>
+              </div>
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="own-rent">Are you willing to let a representative of Loyal Rescue visit your home by appointment before adoption? *</label>
+              <div class="push-2 pad-t-1-2">
+                <input id="contact-us-yes" type="radio" name="contact-us">
+                <label for="contact-us-yes">Yes</label>
+
+                <input id="contact-us-no" type="radio" name="contact-us">
+                <label for="contact-us-no">No</label>
+              </div>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="normal push giga">Personal References</legend>
+          <p>Please list two people who are familiar with both you and your pet(s).</p>
+          <h3>Reference #1 (no family members)</h4>
+
+          <div class="grid">
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label for="full-name">Full Name: *</label>
+              <input id="full-name" name="name">
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label for="tel-1">Phone number: *</label>
+              <input type="tel-1" id="tel">
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label for="rel">Relationship: *</label>
+              <input id="rel">
+            </div>
+          </div>
+
+          <h3>Reference #2 (no family members)</h4>
+
+          <div class="grid">
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label for="full-name-1">Full Name: *</label>
+              <input id="full-name-1" name="name">
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label for="tel-2">Phone number: *</label>
+              <input type="tel-2" id="tel">
+            </div>
+
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label for="rel-1">Relationship: *</label>
+              <input id="rel-1">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="normal push giga">Agreement</legend>
+          <div class="grid">
+            <div class="unit unit-xs-1 unit-l-1-2 gutter-1-4 push">
+              <label class="pad-b-1-8" for="own-rent">All of the information I have given is true and complete.</label>
+              <div class="pad-t-1-2">
+                <input id="agreement-yes" type="radio" name="agreement">
+                <label for="agreement-yes">Yes</label>
+
+                <input id="agreement-no" type="radio" name="agreement">
+                  <label for="agreement-no">No</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <hr>
+        <div class="text-center">
+          <button class="btn button-light" type="submit">Submit</button>
         </div>
-        <div class="push">
-          <label for="name">Last Name</label>
-          <input id="name" name="name">
+      </div>
+    </form>
+
+    <section class="gutter-1-2 contact" id="contact-form" tabindex="0">
+      <div class="grid list-group pad-t-2">
+        <div class="inline-block push wrapper unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+          <h2>Contact</h2>
+          <ol>
+            <li class="street-address">Loyal Rescue</li>
+            <li class="street-address">1027 Window Way</li>
+            <li class="region">Ottawa, ON</li>
+            <li class="postal-code">H6V 7B1</li>
+            <li class="country-name">Canada</li>
+            <li class="email">contact@loyalrescue.ca</li>
+            <li><a href="tel:+1-555-555-5555">555-555-5555</a></li>
+          </ol>
         </div>
-        <div class="push">
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="me@me.com" name="email">
+
+        <div class="inline-block push wrapper unit [ xs-1 s-1 m-1-2 l-1-2 ]" id="donate" tabindex="0">
+          <h2>Donate</h2>
+          <a href="https://www.gofundme.com/">
+            <i class="icon i-128">
+              <img src="images/gofundme.png" alt="">
+            </i>
+          </a>
         </div>
-        <div class="push">
-          <label for="subject">Gender</label>
-          <select id="subject" name="_subject">
-            <option>Female</option>
-            <option>Male</option>
-          </select>
+
+        <div class="inline-block push wrapper unit [ xs-1 s-2 m-1-2 l-1-2 ]" id="follow" tabindex="0">
+          <h2>Follow</h2>
+          <div class="icon i-32">
+            <a href="https://www.facebook.com/">
+              <img src="images/facebook.svg" alt="">
+            </a>
+          </div>
+
+          <div class="icon i-32">
+            <a href="https://www.twitter.com/">
+              <img src="images/twitter.svg" alt="">
+            </a>
+          </div>
+
+          <div class="icon i-32">
+            <a href="https://www.instagram.com/">
+              <img src="images/instagram.svg" alt="">
+            </a>
+          </div>
         </div>
-        <div class="push">
-          <label for="details">Why would you like to adopt a marine mammal?</label>
-          <textarea id="details" name="message"></textarea>
-        </div>
-        <div>
-          <button class="btn btn-light" type="submit">Submit Application</button>
-        </div>
-      </form>
-    </div>
-  </section>
+      </div>
+    </section>
+  </main>
+
+    <footer class="footer gutter-1-2" role="contentinfo" tabindex="0">
+      <div class="wrapper pad-b">
+        <small class="micro">Loyal Rescue © 2017</small>
+      </div>
+    </footer>
 
 </body>
 </html>
